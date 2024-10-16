@@ -5,8 +5,6 @@ import os
 
 client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-temp_folder = tempfile.mkdtemp()
-
 audio_file = st.experimental_audio_input("Record a voice message")
 
 if st.button("Transcribe"):
